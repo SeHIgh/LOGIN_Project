@@ -182,6 +182,8 @@ main{
 
             border: none;
             outline: none;
+
+            font-family: "Jua", sans-serif;
         }
 
         main .box_login_main .box_login #login_btn{
