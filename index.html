@@ -1,11 +1,13 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>GRIT</title>
     <link rel="stylesheet" href="./CSS/main.css">
 </head>
+
 <body>
     <header>
         <h1><a href="#">GRIT</a></h1>
@@ -18,22 +20,25 @@
                 <p>당신의 플랜을 GRIT 과 함께해요</p>
             </div>
             <div class="box_login">
-                <div class="wrap_id_pw">
-                    <div class="input_box">
-                        <input type="text" id="ID" placeholder="아이디">
+                <form method="post" action="/login">
+                    <div class="wrap_id_pw">
+                        <div class="input_box">
+                            <input type="text" id="ID" placeholder="아이디">
+                        </div>
+                        <div class="input_box">
+                            <input type="password" id="PW" placeholder="비밀번호">
+                        </div>
                     </div>
-                    <div class="input_box">
-                        <input type="password" id="PW" placeholder="비밀번호">
-                    </div>
-                </div>
-                <input type="button" id="login_btn" value="로그인">
+                    <input type="button" id="login_btn" value="로그인">
+                </form>
             </div>
-            <ul class = "find_regist_box">
+            <ul class="find_regist_box">
                 <li><a href="#">비밀번호 찾기</a></li>
                 <li><a href="#">아이디 찾기</a></li>
-                <li><a href="./HTML/register.html">회원가입</a></li>
+                <li><a href="./HTML/signup.html">회원가입</a></li>
             </ul>
         </div>
     </main>
 </body>
+
 </html>
