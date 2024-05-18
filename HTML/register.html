@@ -1,44 +1,50 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>회원가입</title>
     <link rel="stylesheet" href="../CSS/register.css">
 </head>
+
 <body>
-    <h1>회원가입</h1>
-    <div>
-        <input type="textbox" id="ID" placeholder="아이디를 입력하시오.">
-        <input type="button" id="ID" placeholder="id">
-    </div>
-    <div>
-        <input type="textbox" id="PW" placeholder="비밀번호를 입력하시오.">
-        <input type="button" id="PW" placeholder="pw">
-    </div>
-    <div>
-        <input type="textbox" id="PW" placeholder="비밀번호를 다시 입력하시오.">
-        <input type="button" id="PW" placeholder="pw">
-    </div>
-    <div>
-        <input type="textbox" id="name" placeholder="이름을 입력하시오.">
-        <input type="button" id="name" placeholder="name">
-    </div>
-    <div>
-        <input type="textbox" id="email" placeholder="이메일을 입력하시오.">
-        <input type="button" id="email" placeholder="email">
-    </div>
-    <div>
-        <input type="textbox" id="phone" placeholder="전화번호를 입력하시오.">
-        <input type="button" id="phone" placeholder="phone">
-    </div>
-    <div>
-        <input type="textbox" id="address" placeholder="주소를 입력하시오.">
-        <input type="button" id="address" placeholder="address">
-    </div>
-    <div>
-        <input type="textbox" id="birth" placeholder="생년월일을 입력하시오.">
-        <input type="button" id="birth" placeholder="birth">
-    </div>
+    <header>
+        <h1><a href="../index.html">GRIT</a></h1>
+    </header>
+
+    <main>
+        <div class="regist_box">
+            <div class="regist_box_title">
+                <h2>회원가입</h2>
+            </div>
+
+            <div class="regist_wrap">
+                <div class="regist_input">
+                    <input type="textbox" id="ID_txt" placeholder="아이디를 입력하시오.">
+                </div>
+                <div class="regist_input">
+                    <input type="textbox" id="PW_txt" placeholder="비밀번호를 입력하시오.">
+                </div>
+                <div class="regist_input">
+                    <input type="textbox" id="name_txt" placeholder="이름을 입력하시오.">
+                </div>
+                <div class="regist_input">
+                    <input type="textbox" id="email_txt" placeholder="이메일을 입력하시오.">
+                </div>
+                <div class="regist_input">
+                    <input type="textbox" id="phone_txt" placeholder="전화번호를 입력하시오.">
+                </div>
+                <div class="regist_input">
+                    <input type="textbox" id="address_txt" placeholder="주소를 입력하시오.">
+                </div>
+                <div class="regist_input">
+                    <input type="textbox" id="birth_txt" placeholder="생년월일을 입력하시오.">
+                </div>
+            </div>
+            <input type="button" id="regist_btn" value="회원가입">
+        </div>
+    </main>
 </body>
+
 </html>
