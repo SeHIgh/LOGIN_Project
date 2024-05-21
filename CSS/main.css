@@ -73,7 +73,7 @@ header{
     text-align: center;
 
     background-image: linear-gradient(to top, #272822, white);
-    color: #fff;
+    /* color: #fff; */
 }
 
 header h1{
@@ -88,20 +88,45 @@ main{
     width: 100%;
     height: 100vh;
 }
-
-    /* login main box */
-    main .box_login_main{
+    /* mode box */
+    main .mode_box{
         position: sticky;
         top: 10%;
 
         width: 300px;
-        height: 300px;
+        height: 320px;
         margin: 0 auto;
         margin-top: 100px;
-        padding: 20px;
+    }
+
+    main .mode_box #mode{
+        position: absolute;
+        right: 0;
+
+        width: 60px;
+        height: 20px;
 
         background-color: rgb(0, 0, 0, 0.3);
-        color: #fff;
+        /* color: #fff; */
+
+        border-radius: 5px;
+        box-shadow: 0 0 10px #000;
+
+        font-family: "Poetsen One", sans-serif;
+    }
+
+    /* login main box */
+    main .mode_box .box_login_main{
+        position: absolute;
+        top: 20px;
+
+        width: 300px;
+        height: 300px;
+
+        padding: 10px;
+
+        background-color: rgb(0, 0, 0, 0.3);
+        /* color: #fff; */
 
         border-radius: 10px;
         box-shadow: 0 0 10px #000;
@@ -110,23 +135,22 @@ main{
         flex-direction: column;
         justify-content: space-between;
     }
-
         /* text box */
-        main .box_login_main .text_box{
+        main .mode_box .box_login_main .text_box{
             text-align: center;
 
             width: 100%;
             height: 65px;
             padding: 0 10px;
 
-            color: #fff;
+            /* color: #fff; */
 
             border: none;
 
             outline: none;
         }
 
-        main .box_login_main .text_box p{
+        main .mode_box .box_login_main .text_box p{
             font-size: 14px;
             font-weight: 100;
             opacity: 0.6;
@@ -134,7 +158,7 @@ main{
         /* /text box */
 
         /* id pw input box */
-        main .box_login_main .box_login{
+        main .mode_box .box_login_main .box_login{
             width: 100%;
             height: 160px;
 
@@ -146,7 +170,7 @@ main{
             justify-content: space-around;
             align-items: center;
         }
-        main .box_login_main .box_login form{
+        main .mode_box .box_login_main .box_login form{
             width: 100%;
             height: 100%;
             display: flex;
@@ -154,7 +178,7 @@ main{
             justify-content: space-around;
             align-items: center;
         }
-        main .box_login_main .box_login form .wrap_id_pw{
+        main .mode_box .box_login_main .box_login form .wrap_id_pw{
             width: 95%;
             height: 80px;
 
@@ -170,15 +194,15 @@ main{
             align-items: center;
         }
 
-        main .box_login_main .box_login form .wrap_id_pw .input_box{
+        main .mode_box .box_login_main .box_login form .wrap_id_pw .input_box{
             width: 100%;
             height: 40px;
         }
-        main .box_login_main .box_login form .wrap_id_pw .input_box:nth-child(2){
+        main .mode_box .box_login_main .box_login form .wrap_id_pw .input_box:nth-child(2){
             border-top: #000 1px solid;
         }
 
-        main .box_login_main .box_login form .wrap_id_pw .input_box input{
+        main .mode_box .box_login_main .box_login form .wrap_id_pw .input_box input{
             width: 100%;
             height: 40px;
             padding: 0 10px;
@@ -186,7 +210,7 @@ main{
             font-size: 12px;
 
             background-color: #181818;
-            color: #fff;
+            /* color: #fff; */
 
             border: none;
             outline: none;
@@ -194,12 +218,12 @@ main{
             font-family: "Jua", sans-serif;
         }
 
-        main .box_login_main .box_login form #login_btn{
+        main .mode_box .box_login_main .box_login form #login_btn{
             width: 95%;
             height: 40px;
 
             background-color: #181818;
-            color: #fff;
+            /* color: #fff; */
 
             border: none;
             border-radius: 5px;
@@ -211,12 +235,12 @@ main{
             font-size: 16px;
         }
 
-        main .box_login_main .box_login form #login_btn:hover{
+        main .mode_box .box_login_main .box_login form #login_btn:hover{
             background-color: #333;
         }
         /* /id pw input box */
 
-    main .box_login_main .find_regist_box{
+    main .mode_box .box_login_main .find_regist_box{
         width: 100%;
         height: 14px;
 
@@ -225,7 +249,7 @@ main{
         justify-content: center;
         align-items: center;
     }
-    main .box_login_main .find_regist_box li{
+    main .mode_box .box_login_main .find_regist_box li{
         width: 100%;
         height: 14px;
 
@@ -238,8 +262,9 @@ main{
         justify-content: center;
         align-items: center;
     }
-    main .box_login_main .find_regist_box li:nth-child(3){
+    main .mode_box .box_login_main .find_regist_box li:nth-child(3){
         border-right: none;
     }
     /* /login main box */
+    /* /mode box */
 /* /main */
